@@ -17,14 +17,14 @@
                 <form class="m-3" action="{{ route('departments.store')}}" method="post">
                     @csrf
                     @method('POST')
-                    <h1 style="color: goldenrod; text-align: center; margin-bottom: 20px;">Department</h1>
+                    <h1 style="color: goldenrod; text-align: center; margin-bottom: 20px;">Create Department</h1>
                     <div class="mb-4">
                         <label for="exampleFormControlInput1" class="form-label fs-5">Department Name </label>
                         <input type="text" id="exampleFormControlInput1" name="name" class="form-control fs-6" placeholder="Enter Department Name">
                     </div>
 
                     <a href="{{ route("departments.index") }}" class="btn btn-outline-primary fs-7">BACK</a>
-                    <button type="submit" class="btn btn-success btn-l">INSERT</button>
+                    <button type="submit" class="btn btn-success btn-l">Submit</button>
                 </form>
             </div>
         </div>

@@ -17,14 +17,14 @@
                 <form action="{{ route('positions.store')}}" method="post">
                     @csrf
                     @method('POST')
-                    <h1 style="color: goldenrod; text-align: center;">Add New Position</h1>
+                    <h1 style="color: goldenrod; text-align: center;">Create Position</h1>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Position Name </label>
                         <input type="text" id="exampleFormControlInput1" name="title" class="form-control" placeholder="Enter Position Name">
                     </div>
 
                     <a href="{{ route('positions.index') }}" class="btn btn-outline-primary">BACK</a>
-                    <button type="submit" class="btn btn-outline-success">INSERT</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
                 </form>
 
             </div>

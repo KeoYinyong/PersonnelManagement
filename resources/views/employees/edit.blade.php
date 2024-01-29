@@ -19,12 +19,12 @@
                     @csrf
                     @method('PUT')
 
-                    <div class="form-group">
+                    <div class="m-3">
                         <label for="name">Name:</label>
                         <input type="text" name="name" class="form-control" value="{{ $employee->name }}" required>
                     </div>
 
-                    <div class="form-group">
+                    <div class="m-3">
                         <label for="department_id">Department:</label>
                         <select name="department_id" class="form-control" required>
 
@@ -36,7 +36,7 @@
                         </select>
                     </div>
 
-                    <div class="form-group">
+                    <div class="m-3">
                         <label for="position_id">Position:</label>
                         <select name="position_id" class="form-control" required>
                             @foreach($positions as $position)
@@ -47,7 +47,8 @@
                         </select>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Update Employee</button>
+                    <a href="{{ route('positions.index') }}" class="btn btn-outline-primary">BACK</a>
+                    <button type="submit" class="btn btn-success">Update</button>
                 </form>
 
             </div>
