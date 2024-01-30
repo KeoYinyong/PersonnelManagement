@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
     <title>Employee</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -44,6 +45,10 @@
             display: block;
             color: #fff;
         }
+        #sidebar ul li a:hover{
+            background-color: white;
+            color: black;
+        }
 
         #content {
             margin-left: 250px;
@@ -61,42 +66,55 @@
                 <h4>Staff Management</h4>
             </div>
             <ul class="nav nav-pills p-w-0">
+
                 <li class="nav-item w-100">
-                    <a class="nav-link active dropdown-toggle" id="mainMenu1" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample1">Employee</a>
+                    <a class="nav-link dropdown-toggle" id="mainMenu1" data-bs-toggle="collapse" href="#collapse1"
+                        role="button" aria-expanded="false" aria-controls="collapseExample1">Employee</a>
                     <div class="collapse" id="collapse1" style="background-color: #007bff;">
                         <!-- Submenu items for Main Menu 1 -->
                         <ul class="list-group" style="padding-left: 10px; margin-top: 5px;">
                             <a href="/employees" class="list-group-item" style="background-color: #0056b3;">View All</a>
-                            <a href="{{ route('employees.create') }}" class="list-group-item" style="background-color: #0056b3;">Add More</a>
-        
+                            <a href="{{ route('employees.create') }}" class="list-group-item"
+                                style="background-color: #0056b3;">Add More</a>
+
                         </ul>
                     </div>
                 </li>
+
                 <li class="nav-item w-100">
-                    <a class="nav-link active dropdown-toggle" id="mainMenu1" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample1">Department</a>
+                    <a class="nav-link dropdown-toggle" id="mainMenu1" data-bs-toggle="collapse" href="#collapse2"
+                        role="button" aria-expanded="true" aria-controls="collapseExample1">Department</a>
                     <div class="collapse" id="collapse2" style="background-color: #007bff;">
                         <!-- Submenu items for Main Menu 1 -->
                         <ul class="list-group" style="padding-left: 10px; margin-top: 5px;">
-                            <a href="/departments" class="list-group-item" style="background-color: #0056b3;">View All</a>
-                            <a href="{{ route('departments.create') }}" class="list-group-item" style="background-color: #0056b3;">Add More</a>
+                            <a href="/departments" class="list-group-item" style="background-color: #0056b3;">View
+                                All</a>
+                            <a href="{{ route('departments.create') }}" class="list-group-item"
+                                style="background-color: #0056b3;">Add More</a>
                         </ul>
                     </div>
                 </li>
+
                 <li class="nav-item w-100">
-                    <a class="nav-link active dropdown-toggle" id="mainMenu1" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapseExample1">Position</a>
-                    <div class="collapse" id="collapse3" style="background-color: #007bff;">
+                    <a class="nav-link dropdown-toggle" id="mainMenu1" data-bs-toggle="collapse" href="#collapse3"
+                        role="button" aria-expanded="false" aria-controls="collapseExample1">
+                        Position</a>
+                    <div id="collapse3" style="background-color: #007bff;">
                         <!-- Submenu items for Main Menu 1 -->
                         <ul class="list-group" style="padding-left: 10px; margin-top: 5px;">
-                            <a href="{{ route('positions.create') }}" class="list-group-item" style="background-color: #0056b3;">Add More</a>
+                            <a href="/positions" class="list-group-item bg-white text-black-50">View All</a>
+                            <a href="{{ route('positions.create') }}" class="list-group-item"
+                                style="background-color: #0056b3;">Add More</a>
                         </ul>
                     </div>
                 </li>
+
             </ul>
         </nav>
         <!-- Page Content -->
         <div id="content" class="p-0 bg-light.bg-gradient">
-            <div class="bg-light p-2 mb-1 border border-black " >
-                <img src="https://static.thenounproject.com/png/2867276-200.png" style="height: 40px; margin: 0;">
+            <div class="bg-light p-2 mb-1 border border-black ">
+                <img src="https://icon-library.com/images/job-icon/job-icon-13.jpg" style="height: 40px; margin: 0;">
                 <h5 class="text-black d-inline mt-3"> Position Page</h5>
             </div>
             <!-- Your content goes here -->
@@ -107,9 +125,9 @@
 
                         <table class="table">
                             <thead class="table-primary ">
-                                <th>Id</th>
-                                <th>Name</th>
-                                <th>Action</th>
+                                <th style="width: 10%;">Id</th>
+                                <th style="width: 50%;">Name</th>
+                                <th style="width: 40%;">Action</th>
 
                             </thead>
                             <tbody>
@@ -123,8 +141,10 @@
                                         <form action="{{ route('positions.destroy', $p->id) }}" method="post">
                                             @csrf
                                             @method("DELETE")
-                                            <a href="{{ route('positions.show', $p->id) }}" class="btn btn-primary btn-lg">View</a>
-                                            <a href="{{ route('positions.edit', $p->id) }}" class="btn btn-secondary btn-lg">Edit</a>
+                                            <a href="{{ route('positions.show', $p->id) }}"
+                                                class="btn btn-primary btn-lg">View</a>
+                                            <a href="{{ route('positions.edit', $p->id) }}"
+                                                class="btn btn-secondary btn-lg">Edit</a>
                                             <button type="submit" class="btn btn-danger btn-lg">Delete</button>
                                         </form>
                                     </td>
@@ -139,66 +159,9 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Position View</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-</head>
-
-<body style="background-color: #D3D3D3;">
-
-    <div class="container">
-        <div class="d-flex align-items-center justify-content-center p-5">
-            <div style="width: 70%; height: 70%;" class="shadow-lg p-3 mb-5 bg-body rounded">
-                <a href="{{ route('positions.create') }}" class="btn btn-success btn-lg" style="margin: 10px;">Add New</a>
-
-                <table class="table">
-                    <thead class="table-primary ">
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Action</th>
-
-                    </thead>
-                    <tbody>
-                        @foreach( $positions as $p)
-                        <tr>
-
-                            <td>{{ $p->id }}</td>
-                            <td>{{ $p->title }}</td>
-
-                            <td>
-                                <form action="{{ route('positions.destroy', $p->id) }}" method="post">
-                                    @csrf
-                                    @method("DELETE")
-                                    <a href="{{ route('positions.show', $p->id) }}" class="btn btn-primary btn-lg">View</a>
-                                    <a href="{{ route('positions.edit', $p->id) }}" class="btn btn-secondary btn-lg">Edit</a>
-                                    <button type="submit" class="btn btn-danger btn-lg">Delete</button>
-                                </form>
-                            </td>
-                        </tr>
-                        @endforeach
-
-                    </tbody>
-                </table>
-                <a href="{{ url('/') }}" class="btn btn-outline-primary">BACK</a>
-            </div>
-        </div>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-
-</html> -->

@@ -10,15 +10,16 @@
 </head>
 
 <body style="background-color: #D3D3D3;">
-    <div class="container">
+<div class="container">
         <div class="d-flex align-items-center justify-content-center p-5">
-            <div style="width: 70%; height: 70%;" class="shadow-lg p-3 mb-5 bg-body rounded">
-
-                <form class="m-3" action="{{ route('departments.store')}}" method="post">
+            <div style="width: 70%; height: 70%; border-radius: 25px;" class="shadow-lg p-3 mb-5 bg-body mt-5">
+                <div style="text-align: center;">
+                    <h2 style="color: goldenrod;">Create Department</h2>
+                </div>
+                <form style=" margin: 20px; padding: 20px;"  class="m-3" action="{{ route('departments.store')}}" method="post">
                     @csrf
                     @method('POST')
-                    <h1 style="color: goldenrod; text-align: center; margin-bottom: 20px;">Create Department</h1>
-                    <div class="mb-4">
+                   <div class="mb-4">
                         <label for="exampleFormControlInput1" class="form-label fs-5">Department Name </label>
                         <input type="text" id="exampleFormControlInput1" name="name" class="form-control fs-6" placeholder="Enter Department Name">
                     </div>

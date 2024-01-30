@@ -135,10 +135,11 @@
         <!-- Page Content -->
         <div id="content" class="p-0">
             <div class="bg-light p-2 mb-4">
-                <h5 class="text-black"> Home Page</h5>
+                <img src="https://i.pinimg.com/474x/0a/b4/00/0ab4006798529a64c04c1b2ddbc12d13.jpg" style="height: 40px; margin: 0;">
+                <h5 class="text-black  d-inline mt-3"> Home Page</h5>
             </div>
-                <div class="bg-light-30 ml-5">
-                <h1>hello</h1>
+                <div class="bg-light-30 ml-5 text-center align-content-center">
+               <h3>Welcome Staff Management</h3>
             </div>
         </div>
     </div>
