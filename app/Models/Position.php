@@ -10,5 +10,6 @@ class Position extends Model
     use HasFactory;
     protected $table = "positions";
     protected $primaryKey = "id";
+    public $timestamps = false;
     public $fillable = ["title"];
 }

@@ -39,7 +39,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
     <title>Employee</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -97,34 +98,43 @@
 
             <ul class="nav nav-pills p-w-0">
                 <li class="nav-item w-100">
-                    <a class="nav-link active dropdown-toggle" id="mainMenu1" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample1">Employee</a>
+                    <a class="nav-link active dropdown-toggle" id="mainMenu1" data-bs-toggle="collapse"
+                        href="#collapse1" role="button" aria-expanded="false"
+                        aria-controls="collapseExample1">Employee</a>
                     <div class="collapse" id="collapse1" style="background-color: #007bff;">
                         <!-- Submenu items for Main Menu 1 -->
                         <ul class="list-group" style="padding-left: 10px; margin-top: 5px;">
                             <a href="/employees" class="list-group-item" style="background-color: #0056b3;">View All</a>
                         </ul>
                         <ul class="list-group" style="padding-left: 10px; margin-top: 5px;">
-                            <a href="{{ route('employees.create') }}" class="list-group-item" style="background-color: #0056b3;">Add More</a>
+                            <a href="{{ route('employees.create') }}" class="list-group-item"
+                                style="background-color: #0056b3;">Add More</a>
                         </ul>
                     </div>
                 </li>
                 <li class="nav-item w-100">
-                    <a class="nav-link active dropdown-toggle" id="mainMenu1" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample1">Department</a>
+                    <a class="nav-link active dropdown-toggle" id="mainMenu1" data-bs-toggle="collapse"
+                        href="#collapse2" role="button" aria-expanded="false"
+                        aria-controls="collapseExample1">Department</a>
                     <div class="collapse" id="collapse2" style="background-color: #007bff;">
                         <!-- Submenu items for Main Menu 1 -->
                         <ul class="list-group" style="padding-left: 10px; margin-top: 5px;">
-                            <a href="/departments" class="list-group-item" style="background-color: #0056b3;">View All</a>
+                            <a href="/departments" class="list-group-item" style="background-color: #0056b3;">View
+                                All</a>
                             <a href="/employees" class="list-group-item" style="background-color: #0056b3;">Add More</a>
                         </ul>
                     </div>
                 </li>
                 <li class="nav-item w-100">
-                    <a class="nav-link active dropdown-toggle" id="mainMenu1" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapseExample1">Position</a>
+                    <a class="nav-link active dropdown-toggle" id="mainMenu1" data-bs-toggle="collapse"
+                        href="#collapse3" role="button" aria-expanded="false"
+                        aria-controls="collapseExample1">Position</a>
                     <div class="collapse" id="collapse3" style="background-color: #007bff;">
                         <!-- Submenu items for Main Menu 1 -->
                         <ul class="list-group" style="padding-left: 10px; margin-top: 5px;">
                             <a href="/positions" class="list-group-item" style="background-color: #0056b3;">View All</a>
-                            <a href="{{ route('positions.create') }}" class="list-group-item" style="background-color: #0056b3;">Add More</a>
+                            <a href="{{ route('positions.create') }}" class="list-group-item"
+                                style="background-color: #0056b3;">Add More</a>
                         </ul>
                     </div>
                 </li>
@@ -135,16 +145,20 @@
         <!-- Page Content -->
         <div id="content" class="p-0">
             <div class="bg-light p-2 mb-4">
-                <img src="https://i.pinimg.com/474x/0a/b4/00/0ab4006798529a64c04c1b2ddbc12d13.jpg" style="height: 40px; margin: 0;">
+                <img src="https://i.pinimg.com/474x/0a/b4/00/0ab4006798529a64c04c1b2ddbc12d13.jpg"
+                    style="height: 40px; margin: 0;">
                 <h5 class="text-black  d-inline mt-3"> Home Page</h5>
             </div>
-                <div class="bg-light-30 ml-5 text-center align-content-center">
-               <h3>Welcome Staff Management</h3>
+            <div class="bg-light-30 ml-5 text-center align-content-center">
+                <h3>Welcome Staff Management</h3>
+               <img src="diagram.png" alt="">
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

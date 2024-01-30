@@ -46,6 +46,10 @@
             display: block;
             color: #fff;
         }
+        #sidebar ul li{
+            margin: 2px 0;
+        }
+
         #sidebar ul li a:hover{
             background-color: white;
             color: black;
@@ -114,31 +118,31 @@
 
         <!-- Page Content -->
         <div id="content" class="p-0">
-            <div class="bg-light p-2 mb-4">
+            <div class="bg-light p-2 mb-1 border border-black shadow-sm p-3 mb-3 bg-body">
                 <img src="https://cdn-icons-png.flaticon.com/512/1323/1323223.png"
                     style="height: 40px; margin: 0;">
                 <h5 class="text-black d-inline mt-3"> Department Page</h5>
             </div>
 
             <div class="bg-light-30 ml-5">
-                <div class="d-flex align-items-center justify-content-center p-5">
-                    <div style="width: 100%; height: 100%;">
+                <div class="d-flex align-items-center justify-content-center px-5">
+                    <div style="width: 90%; height: 100%;">
                         <h3 class="text-center mb-4">All Departments</h3>
                         <table class="table ">
-                            <thead class="table-primary ">
+                            <thead class="table-primary">
                                 <th style="width: 10%;">Id</th>
                                 <th style="width: 50%;">Name</th>
-                                <th style="width: 40%;">Action</th>
+                                <th style="width: 40%;" class="text-center">Action</th>
 
                             </thead>
                             <tbody>
 
                                 @foreach( $departments as $d)
-                                <tr class="">
+                                <tr>
 
                                     <td>{{ $d->id }}</td>
                                     <td>{{ $d->name }}</td>
-                                    <td>
+                                    <td  class="text-center">
                                         <form action="{{ route('departments.destroy', $d->id) }}" method="post">
                                             @csrf
                                             @method("DELETE")

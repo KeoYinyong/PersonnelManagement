@@ -45,6 +45,9 @@
             display: block;
             color: #fff;
         }
+        #sidebar ul li{
+            margin: 2px 0;
+        }
         #sidebar ul li a:hover{
             background-color: white;
             color: black;
@@ -113,21 +116,20 @@
         </nav>
         <!-- Page Content -->
         <div id="content" class="p-0 bg-light.bg-gradient">
-            <div class="bg-light p-2 mb-1 border border-black ">
+            <div class="bg-light p-2 mb-1 border border-black shadow-sm p-3 mb-3 bg-body">
                 <img src="https://icon-library.com/images/job-icon/job-icon-13.jpg" style="height: 40px; margin: 0;">
                 <h5 class="text-black d-inline mt-3"> Position Page</h5>
             </div>
             <!-- Your content goes here -->
             <div class="bg-light-30 ml-5">
-                <div class="d-flex align-items-center justify-content-center p-5">
-                    <div style="width: 100%; height: 100%;">
+                <div class="d-flex align-items-center justify-content-center px-5">
+                    <div style="width: 90%; height: 100%;">
                         <h3 class="text-center mb-4">All Positions</h3>
-
                         <table class="table">
                             <thead class="table-primary ">
                                 <th style="width: 10%;">Id</th>
                                 <th style="width: 50%;">Name</th>
-                                <th style="width: 40%;">Action</th>
+                                <th style="width: 40%;"  class="text-center">Action</th>
 
                             </thead>
                             <tbody>
@@ -136,8 +138,7 @@
 
                                     <td>{{ $p->id }}</td>
                                     <td>{{ $p->title }}</td>
-
-                                    <td>
+                                    <td  class="text-center">
                                         <form action="{{ route('positions.destroy', $p->id) }}" method="post">
                                             @csrf
                                             @method("DELETE")

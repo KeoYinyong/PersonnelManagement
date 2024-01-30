@@ -46,6 +46,9 @@
             display: block;
             color: #fff;
         }
+        #sidebar ul li{
+            margin: 2px 0;
+        }
         #sidebar ul li a:hover{
             background-color: white;
             color: black;
@@ -110,14 +113,14 @@
         </nav>
         <!-- Page Content -->
         <div id="content" class="p-0 bg-light.bg-gradient">
-            <div class="bg-light p-2 mb-1 border border-black ">
+            <div class="bg-light p-2 mb-1 border border-black shadow-sm p-3 mb-3 bg-body">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZLG21itESiQqpuSyaJG6n2StKN1fqJWYvXw&usqp=CAU" style="height: 40px; margin: 0;">
                 <h5 class="text-black d-inline mt-3"> Employee Page</h5>
             </div>
 
             <!-- Your content goes here -->
             <div class="bg-light-30 ml-5">
-                <div class="d-flex align-items-center justify-content-center p-5">
+                <div class="d-flex align-items-center justify-content-center px-5">
                     <div style="width: 100%; height: 100%;">
                         <h3 class="text-center mb-4">All Employees</h3>
                         <table class="table ">
@@ -126,7 +129,7 @@
                                 <th style="width: 20%;">Name</th>
                                 <th style="width: 20%;">Position</th>
                                 <th style="width: 20%;">Department</th>
-                                <th style="width: 30%;">Action</th>
+                                <th style="width: 30%;"  class="text-center">Action</th>
                             </thead>
                             <tbody>
                                 @foreach( $employees as $e)
