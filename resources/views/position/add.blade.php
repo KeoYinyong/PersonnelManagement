@@ -45,7 +45,8 @@
             display: block;
             color: #fff;
         }
-        #sidebar ul li{
+
+        #sidebar ul li {
             margin: 2px 0;
         }
 
@@ -117,9 +118,10 @@
         </nav>
         <!-- Page Content -->
         <div id="content" class="p-0 bg-light.bg-gradient">
-            <div class="bg-light p-2 mb-1 border border-black shadow-sm p-3 mb-3 bg-body">
-                <img src="https://icon-library.com/images/job-icon/job-icon-13.jpg" style="height: 40px; margin: 0;">
-                <h5 class="text-black d-inline mt-3"> Position Page</h5>
+            <!-- <div class="bg-light p-2 mb-1 border border-black shadow-sm p-3 mb-3 bg-body"> -->
+            <div class="bg-light p-2 mb-4 shadow-sm p-3 mb-3 bg-body">
+                <img src="https://icon-library.com/images/job-icon/job-icon-13.jpg" style="height: 30px; margin: 0;">
+                <h6 class="text-black d-inline mt-3"> Position Page</h6>
             </div>
             <!-- Your content goes here -->
             <div class="bg-light-30 ml-5">
@@ -134,8 +136,8 @@
                             @method('POST')
                             <div class="mb-4">
                                 <label for="exampleFormControlInput1" class="form-label fs-5">Position Name </label>
-                                <input type="text" id="exampleFormControlInput1" name="title" class="form-control fs-5 mt-2"
-                                    placeholder="Enter Position Name">
+                                <input type="text" id="exampleFormControlInput1" name="title"
+                                    class="form-control fs-5 mt-2" placeholder="Enter Position Name">
                             </div>
                             <button type="submit" class="btn btn-success btn-lg float-end">Submit</button>
                         </form>

@@ -46,7 +46,8 @@
             display: block;
             color: #fff;
         }
-        #sidebar ul li{
+
+        #sidebar ul li {
             margin: 2px 0;
         }
 
@@ -114,10 +115,10 @@
         </nav>
         <!-- Page Content -->
         <div id="content" class="p-0 bg-light.bg-gradient">
-            <div class="bg-light p-2 mb-1 border border-black shadow-sm p-3 mb-3 bg-body">
+            <div class="bg-light p-2 mb-4 shadow-sm p-3 mb-3 bg-body">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZLG21itESiQqpuSyaJG6n2StKN1fqJWYvXw&usqp=CAU"
-                    style="height: 40px; margin: 0;">
-                <h5 class="text-black d-inline mt-3"> Employee Page</h5>
+                    style="height: 30px; margin: 0;">
+                <h6 class="text-black d-inline mt-3"> Employee Page</h6>
             </div>
 
             <!-- Your content goes here -->
@@ -132,7 +133,8 @@
                             @csrf
                             <div class="mb-3">
                                 <label for="name">Name:</label>
-                                <input type="text" name="name" class="form-control fs-6 mt-2" required placeholder="Enter Employee Name">
+                                <input type="text" name="name" class="form-control fs-6 mt-2" required
+                                    placeholder="Enter Employee Name">
                             </div>
 
                             <div class="mb-3">

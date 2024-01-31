@@ -1,36 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomePage</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-</head>
-
-<body>
-    <div class="container h-h-full w-full mt-5">
-
-        <div class="row justify-content-md-center">
-
-            <div class="col-md-auto shadow-lg p-3 bg-body rounded">
-                <h2>Menu</h2>
-                <div class="row" style="margin: 20px; padding: 20px;">
-                    <a href="/departments" class="btn btn-outline-primary btn-lg m-3">Departments</a>
-                    <a href="/positions" class="btn btn-outline-primary btn-lg m-3">Positions</a>
-                    <a href="/employees" class="btn btn-outline-primary btn-lg m-3">Employees</a>
-                </div>
-        </div>
-    </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
-    <title>Employee</title>
+    <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
@@ -144,14 +111,43 @@
 
         <!-- Page Content -->
         <div id="content" class="p-0">
-            <div class="bg-light p-2 mb-4">
+            <div class="bg-light p-2 mb-4 shadow-sm p-3 mb-3 bg-body">
                 <img src="https://i.pinimg.com/474x/0a/b4/00/0ab4006798529a64c04c1b2ddbc12d13.jpg"
-                    style="height: 40px; margin: 0;">
-                <h5 class="text-black  d-inline mt-3"> Home Page</h5>
+                    style="height: 30px; margin: 0;">
+                <h6 class="text-black  d-inline mt-3"> Home Page</h6>
             </div>
             <div class="bg-light-30 ml-5 text-center align-content-center">
-                <h3>Welcome Staff Management</h3>
-               <img src="diagram.png" alt="">
+                <h1>Welcome Staff Management</h1>
+                <h3>Group Member</h3>
+                <div class="px-5">
+                    <table class="table table-striped">
+                        <thead class="table-primary">
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                Group
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Keo Yinyong</td>
+                                <td>B20223600</td>
+                                <td>ES1</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Sous Nasue</td>
+                                <td>B2022</td>
+                                <td>ES1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

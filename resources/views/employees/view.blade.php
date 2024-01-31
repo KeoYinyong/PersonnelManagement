@@ -46,10 +46,12 @@
             display: block;
             color: #fff;
         }
-        #sidebar ul li{
+
+        #sidebar ul li {
             margin: 2px 0;
         }
-        #sidebar ul li a:hover{
+
+        #sidebar ul li a:hover {
             background-color: white;
             color: black;
         }
@@ -111,11 +113,20 @@
                 </li>
             </ul>
         </nav>
+        
         <!-- Page Content -->
         <div id="content" class="p-0 bg-light.bg-gradient">
-            <div class="bg-light p-2 mb-1 border border-black shadow-sm p-3 mb-3 bg-body">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZLG21itESiQqpuSyaJG6n2StKN1fqJWYvXw&usqp=CAU" style="height: 40px; margin: 0;">
-                <h5 class="text-black d-inline mt-3"> Employee Page</h5>
+            <!-- <div class="bg-light p-2 mb-1 border border-black shadow-sm p-3 mb-3 bg-body">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZLG21itESiQqpuSyaJG6n2StKN1fqJWYvXw&usqp=CAU"
+                    style="height: 30px; margin: 0;">
+                <h6 class="text-black d-inline mt-3"> Employee Page</h6>
+            </div> -->
+            <div class="bg-light p-2 mb-4 shadow-sm p-3 mb-3 bg-body">
+                <a href="{{ url('/') }}">
+                    <img src="https://i.pinimg.com/474x/0a/b4/00/0ab4006798529a64c04c1b2ddbc12d13.jpg"
+                        style="height: 30px; margin: 0;">
+                    <h6 class="text-black  d-inline mt-3"> Home Page</h6>
+                </a>
             </div>
 
             <!-- Your content goes here -->
@@ -129,7 +140,7 @@
                                 <th style="width: 20%;">Name</th>
                                 <th style="width: 20%;">Position</th>
                                 <th style="width: 20%;">Department</th>
-                                <th style="width: 30%;"  class="text-center">Action</th>
+                                <th style="width: 30%;" class="text-center">Action</th>
                             </thead>
                             <tbody>
                                 @foreach( $employees as $e)
@@ -138,7 +149,7 @@
                                     <td>{{ $e->name }}</td>
                                     <td>{{ $e->position->title }}</td>
                                     <td>{{ $e->department->name }}</td>
-                                    <td >
+                                    <td>
                                         <form action="{{ route('employees.destroy', $e->id) }}" method="post">
                                             @csrf
                                             @method("DELETE")

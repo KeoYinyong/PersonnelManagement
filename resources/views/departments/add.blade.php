@@ -46,7 +46,8 @@
             display: block;
             color: #fff;
         }
-        #sidebar ul li{
+
+        #sidebar ul li {
             margin: 2px 0;
         }
 
@@ -118,9 +119,9 @@
 
         <!-- Page Content -->
         <div id="content" class="p-0">
-            <div class="bg-light p-2 mb-1 border border-black shadow-sm p-3 mb-3 bg-body">
-                <img src="https://cdn-icons-png.flaticon.com/512/1323/1323223.png" style="height: 40px; margin: 0;">
-                <h5 class="text-black d-inline mt-3"> Department Page</h5>
+            <div class="bg-light p-2 mb-4 shadow-sm p-3 mb-3 bg-body">
+                <img src="https://cdn-icons-png.flaticon.com/512/1323/1323223.png" style="height: 30px; margin: 0;">
+                <h6 class="text-black d-inline mt-3"> Department Page</h6>
             </div>
 
             <div class="bg-light-30 ml-5">
@@ -151,4 +152,5 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
