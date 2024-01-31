@@ -45,6 +45,11 @@
             display: block;
             color: #fff;
         }
+        #sidebar ul li a:hover {
+            background-color: white;
+            color: black;
+        }
+
 
         #content {
             margin-left: 250px;
